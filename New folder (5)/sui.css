@@ -1,0 +1,33 @@
+body{
+	
+	background-color:skyblue;
+ color:black;
+ 
+}
+
+
+u{
+text-decoration:dottedlines;
+
+}
+h1{
+	color:black;
+text-align:center;
+font-family:castller;
+font-size:54px;
+}
+.sai{
+	text-align:center;
+
+}
+.gf{
+	font-size:33px;
+	font-family:roboto;
+}
+q{
+	font-size:34px;
+color:white;
+
+}
+h2{color:red;
+}

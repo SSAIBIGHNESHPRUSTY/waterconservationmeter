@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<title>water</title>
+<link rel="stylesheet" type="text/css" href="sui.css">
+<body>
+<div class="sai">
+	<h1><b><u>Water Conservation Meter</u></b></h1>
+	
+	<q> EVERY DROP OF WATER COUNTS </q><br>
+	<br>
+</div> 
+
+
+<script type="text/javascript">
+function validate()
+{
+		console.log("working");
+		var uname = parseInt(document.getElementById('uname').value);
+		var pass = parseInt(document.getElementById('pass').value);
+		uname *= 50;
+		if (pass > uname) {
+			pass -= uname;
+			document.getElementById("output").innerHTML += pass + "<br/>" + "your consumption is more than required." + "<br/>" + "please try to reduce your consumption of water by 'pass' litres";
+		} else if (pass < uname){
+		    document.getElementById("output").innerHTML += "You are using water in proper manner and please maintain this consistency";
+		} else if(pass == uname){
+			document.getElementById("output").innerHTML += "Your using water in the correct manner";
+		} else {
+		    document.getElementById("output").innerHTML += "Wrong input";
+		}						
+}
+</script>
+	<marquee direction="left" behavior="alternate" scrollamount=" 10times" 
+                                          border:"black"; scrollamount="2sec"> 
+                                            <img src="vcd.jpg"width="334px" height="206px" border="2px solid black">
+                                            <img src="wa.jpg"width="334px" height="206px" border="2px solid black" >
+                                            <img src="fd.jpg"width="334px" height="206px" border="2px solid black">
+                                            <img src="bv.jpg" width="334px" height="206px" border="2px solid black">
+                                            <img src="gfd.jpg" width="334px" height="206px" border="2px solid black">
+                                             </marquee>
+		
+		
+	<br><h2>To know About Your Water Meter</h2>
+	<br>
+
+		ENTER THE TOTAL NUMBER OF MEMBERS PRESENT :-
+		<input id ="uname" placeholder=" " type=text/>
+		<br/>
+		<br/>
+		ENTER THE AMOUNT OF WATER BEING CONSUMED:-
+		<input id="pass" placeholder=" " type=text/>
+		<br/>
+		<br/>
+		<button onclick="validate()">Submit</button>
+	<div id="output">Your meter - </div>
+	<div class="gf">					
+						<p><h2>Water Harvesting</h2>
+Water scarcity is lack of fresh water resources to meet water demand.<br>
+Water conservation meter measures the amount of water being overused.<br>
+It will give the basic information of how much water is being wasted by a family.<br>It will give awareness to the people about water consumption and conservation.<br>Water conservation encompasses the policies, strategies and activities made to manage fresh water as a sustainable resource, to protect the water environment, and to meet current and future human demand. Population, household size, and growth and affluence all affect how much water is used.</p>
+</div>
+</body>
+</html>
